@@ -20,7 +20,7 @@ include './library/consulSQL.php';
                 </div>
                 <?php 
                     $CodigoProducto=consultasSQL::clean_string($_GET['CodigoProd']);
-                    $productoinfo=  ejecutarSQL::consultar("SELECT producto.CodigoProd,producto.NombreProd,producto.CodigoCat,categoria.Nombre,producto.Precio,producto.Descuento,producto.Stock,producto.Imagen FROM categoria INNER JOIN producto ON producto.CodigoCat=categoria.CodigoCat  WHERE CodigoProd='".$CodigoProducto."'");
+                    $productoinfo=  ejecutarSQL::consultar("SELECT producto.CodigoProd,producto.NombreProd,producto.Modelo,producto.CodigoCat,categoria.Nombre,producto.Precio,producto.Descuento,producto.Stock,producto.Imagen FROM categoria INNER JOIN producto ON producto.CodigoCat=categoria.CodigoCat  WHERE CodigoProd='".$CodigoProducto."'");
                     while($fila=mysqli_fetch_array($productoinfo, MYSQLI_ASSOC)){
                         echo '
                             <div class="col-xs-12 col-sm-6">
@@ -29,6 +29,7 @@ include './library/consulSQL.php';
                                 <h4><strong>Nombre: </strong>'.$fila['NombreProd'].'</h4><br>
                                 <h4><strong>Precio: </strong>$'.number_format(($fila['Precio']-($fila['Precio']*($fila['Descuento']/100))), 2, '.', '').'</h4><br>
                                 <h4><strong>Cantidad: </strong>'.$fila['Stock'].'</h4><br>
+                                <h4><strong>Presentación: </strong>'.$fila['Modelo'].'</h4><br>
                                 <h4><strong>Categoria: </strong>'.$fila['Nombre'].'</h4>';
                                 if($fila['Stock']>=1){
                                     if($_SESSION['nombreAdmin']!="" || $_SESSION['nombreUser']!=""){
