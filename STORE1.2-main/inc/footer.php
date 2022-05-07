@@ -28,7 +28,7 @@
                     David  Castillo .</br>
                     German Castro.</br>
                     Jesus Zabaleta</br>
-                    Nelson </br>
+                    Nelson Barrantes </br>
                 </p>
             </div>
             <div class="col-sm-4">

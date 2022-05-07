@@ -22,19 +22,19 @@
             <div class="item active">
                 <img src="./assets/img/slider1.jpg" alt="slider1">
                 <div class="carousel-caption">
-                    Text Slider 1
+                    
                 </div>
             </div>
             <div class="item">
                 <img src="./assets/img/slider2.jpg" alt="slider2">
                 <div class="carousel-caption">
-                    Text Slider 2
+                    
                 </div>
             </div>
             <div class="item">
                 <img src="./assets/img/slider3.jpg" alt="slider3">
                 <div class="carousel-caption">
-                    Text Slider 3
+                    
                 </div>
             </div>
         </div>
