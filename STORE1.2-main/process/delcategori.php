@@ -4,7 +4,13 @@ include '../library/configServer.php';
 include '../library/consulSQL.php';
 
 $codeCateg=consultasSQL::clean_string($_POST['categ-code']);
+#PRUEBA
+#if ($codeCateg == 00){
+#	$cons=ejecutarSQL::consultar("SELECT * FROM producto");
+#}else{
+#
 $cons=ejecutarSQL::consultar("SELECT * FROM producto WHERE CodigoCat='$codeCateg'");
+
 if(mysqli_num_rows($cons)<=0){
     if(consultasSQL::DeleteSQL('categoria', "CodigoCat='".$codeCateg."'")){
         echo '<script>
