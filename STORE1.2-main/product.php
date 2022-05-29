@@ -68,7 +68,7 @@ include './library/consulSQL.php';
                   $regpagina = 20;
                   $inicio = ($pagina > 1) ? (($pagina * $regpagina) - $regpagina) : 0;
 
-                  #Prueba
+                  #TODAS LAS CATEGORIAS 
                   if ($categoria =='99'){
                     $consultar_productos=mysqli_query($mysqli," SELECT * FROM producto WHERE Stock > 0 AND Estado='Activo' LIMIT $inicio, $regpagina");
                     $selCat2=ejecutarSQL::consultar("SELECT * FROM categoria");
