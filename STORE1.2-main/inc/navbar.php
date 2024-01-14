@@ -96,7 +96,7 @@
                     <input type="password" class="form-control" name="clave-login" required="">
                 </div>
 
-                <p>¿Cómo iniciaras sesión?</p>
+                <!--<p>¿Cómo iniciaras sesión?</p>
                
                 <div class="radio">
                   <label>
@@ -110,7 +110,7 @@
                       <input type="radio" name="optionsRadios" value="option2">
                        Administrador
                   </label>
-               </div>
+               </div> -->
                
                 <div class="modal-footer">
                   <button type="submit" class="btn btn-primary btn-raised btn-sm">Iniciar sesión</button>
