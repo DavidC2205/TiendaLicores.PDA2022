@@ -10,7 +10,7 @@
         if($radio=="option2"){
           $verAdmin=ejecutarSQL::consultar("SELECT * FROM administrador WHERE Nombre='$nombre' AND Clave='$clave'");
          /* $verAdmin=ejecutarSQL::consultar("SELECT * FROM administrador WHERE Nombre='admin' AND Clave='admin'");*/
-         
+         //xd//
           $AdminC=mysqli_num_rows($verAdmin);
             if($AdminC>0){
                 $filaU=mysqli_fetch_array($verAdmin, MYSQLI_ASSOC);
