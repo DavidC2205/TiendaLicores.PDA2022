@@ -80,7 +80,7 @@ include './library/consulSQL.php';
                     $datCat=mysqli_fetch_array($selCat, MYSQLI_ASSOC);                  
                     }
                   #
-                  
+                  //Se debe crear en el panel de administracion la Categoria TODAS con numero de categoria 99 para empezar que se empiece a mostrar
 
                   $totalregistros = mysqli_query($mysqli,"SELECT FOUND_ROWS()");
                   $totalregistros = mysqli_fetch_array($totalregistros, MYSQLI_ASSOC);
